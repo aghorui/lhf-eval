@@ -1,0 +1,4 @@
+nano/nano-7.2/build/*
+**/*.o
+**/*.bc
+**/*.ll

@@ -1,0 +1,163 @@
+++ pwd
++ PROJECT_ROOT=REDACTED
++ cd REDACTED/SLIM_28JULY2025
++ mkdir -p build
++ cd build
++ rm -rf CMakeCache.txt CMakeFiles cmake_install.cmake install_manifest.txt libmergeExit.so libslimPass.so libslim.so Makefile
++ cmake .. -DDISABLE_IGNORE_EFFECT=1
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test HAVE_FFI_CALL
+-- Performing Test HAVE_FFI_CALL - Success
+-- Found FFI: /usr/lib/x86_64-linux-gnu/libffi.so
+-- Performing Test Terminfo_LINKABLE
+-- Performing Test Terminfo_LINKABLE - Success
+-- Found Terminfo: /usr/lib/x86_64-linux-gnu/libtinfo.so
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11")
+-- Found LibXml2: /usr/lib/x86_64-linux-gnu/libxml2.so (found version "2.9.13")
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: REDACTED/SLIM_28JULY2025/build
++ make -j4
+[ 11%] Building CXX object CMakeFiles/slimPass.dir/Passes/GlobalInit.cpp.o
+[ 22%] Building CXX object CMakeFiles/slim.dir/IR.cpp.o
+[ 33%] Building CXX object CMakeFiles/slim.dir/Instructions.cpp.o
+[ 44%] Building CXX object CMakeFiles/mergeExit.dir/Passes/MergeExit.cpp.o
+[ 55%] Building CXX object CMakeFiles/slim.dir/Operand.cpp.o
+[ 66%] Linking CXX shared library libslimPass.so
+[ 66%] Built target slimPass
+[ 77%] Building CXX object CMakeFiles/slim.dir/SLIMDebug.cpp.o
+[ 88%] Linking CXX shared library libmergeExit.so
+[ 88%] Built target mergeExit
+[100%] Linking CXX shared library libslim.so
+[100%] Built target slim
++ sudo make install
+[ 55%] Built target slim
+[ 77%] Built target slimPass
+[100%] Built target mergeExit
+Install the project...
+-- Install configuration: ""
+-- Installing: /usr/local/lib/libslim.so
+-- Set non-toolchain portion of runtime path of "/usr/local/lib/libslim.so" to ""
+-- Up-to-date: /usr/local/include/slim
+-- Up-to-date: /usr/local/include/slim/Operand_4Aug24.h
+-- Up-to-date: /usr/local/include/slim/IR-merged.h
+-- Up-to-date: /usr/local/include/slim/SLIMDebug.h
+-- Up-to-date: /usr/local/include/slim/Instructions.h
+-- Up-to-date: /usr/local/include/slim/Operand.h
+-- Up-to-date: /usr/local/include/slim/IR.h
+-- Up-to-date: /usr/local/include/slim/Instructions-merged.h
++ cd REDACTED/VASCO-LFCPA-3
++ mkdir -p build
++ ./run.sh hmmer --FUNPTR --NAIVE_MODE
+FUNPTR
+NAIVE_MODE
+-DFUNPTR;-DNAIVE_MODE
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: REDACTED/VASCO-LFCPA-3/build
+[ 14%] Building CXX object CMakeFiles/iplfcpa.dir/include/TransitionGraph.cpp.o
+[ 28%] Building CXX object CMakeFiles/iplfcpa.dir/lfcpa.cpp.o
+REDACTED/VASCO-LFCPA-3/lfcpa.cpp: In member function ‘virtual std::pair<LFPointsToSet, LFLivenessSet> IPLFCPA::CallOnflowFunction(int, BaseInstruction*, int, std::pair<SLIMOperand*, SLIMOperand*>)’:
+REDACTED/VASCO-LFCPA-3/lfcpa.cpp:5522:1: warning: control reaches end of non-void function [-Wreturn-type]
+ 5522 | }
+      | ^
+[ 42%] Building CXX object CMakeFiles/iplfcpa.dir/FSSP_Kill.cpp.o
+[ 57%] Building CXX object CMakeFiles/iplfcpa.dir/FISP_Gen.cpp.o
+[ 71%] Building CXX object CMakeFiles/iplfcpa.dir/FISP_Def.cpp.o
+[ 85%] Building CXX object CMakeFiles/iplfcpa.dir/Profiling.cpp.o
+[100%] Linking CXX executable iplfcpa
+[100%] Built target iplfcpa
+=======================Generate LL Files using CLANG=======================
+==============================Running Analysis================================ 
+
+
+Inside CONSTRUCTOR with slim as: 1
+Inside CONSTRUCTOR with slim as: 1
+
+Populating CallGraph START
+
+Populating CallGraph END
+
+ In doAnalysis 3....
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+ Pointee is a ?...hence do nothing.
+
+@@@@ OPERATION COUNT: 411830994
+
+
+Total time taken in Analysis: 45603287 milliseconds
+
+Total time taken for Backwards Analysis: 20765209 milliseconds
+
+Total time taken for Forwards Analysis: 24838006 milliseconds
+
+==============================Analysis Over================================
++ set +x
+Wallclock Time: 45744.32, Max RSS (KB): 27360788
